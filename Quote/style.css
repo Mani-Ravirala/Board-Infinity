@@ -1,0 +1,62 @@
+body {
+  background-color: rgb(92, 112, 238);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.container {
+  background-color: rgb(205, 212, 248);
+  padding: 30px;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote {
+  font-size: 24px;
+  color: rgb(92, 112, 238);
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.author {
+  font-size: 18px;
+  float: right;
+  display: block;
+  margin-bottom: 10px;
+  color: rgb(92, 112, 238);
+  align-self: flex-end;
+}
+
+#new-quote {
+  background-color: rgb(92, 112, 238);
+  color: white;
+  border: none;
+  padding: 14px 44px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  place-content: center;
+}
+
+.quote-icons i {
+  font-size: 24px;
+  color: rgb(92, 112, 238);
+}

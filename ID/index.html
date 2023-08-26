@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student ID Card Generator</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-title">Student ID Card Generator</h1>
+  <div class="container">
+    <div class="form-container">
+      <h2>Enter Student Details</h2>
+      <form id="id-card-form" class="form">
+
+      <div class="out">
+        <label for="name">Enter Name :</label><br>
+        <div class="field">
+          <i class="fas fa-user-circle" style="margin-right: 20px; margin-left: 4px;"></i>
+          <input type="text" id="name" required><br><br>
+        </div>
+      </div>
+
+    <div class="out">
+        <label for="student-id"> College Name :</label><br>
+        <div class="field">
+            <i class="fas fa-university" style="margin-right: 20px; margin-left: 4px;"></i>
+          <input type="text" id="student-id" required><br><br>
+        </div>
+    </div>
+
+
+      <div class="out">
+        <label for="course">Enter Location : </label>
+        <div class="field">
+         <i class="fas fa-address-card" style="margin-right: 20px; margin-left: 4px;"></i>
+         <input type="text" id="course" required><br><br>
+        </div>
+      </div>
+
+
+       <div class="out">
+        <label for="photo">Enter Student's Picture :</label>
+       <div class="phot">
+        <input type="file" id="photo" accept="image/*" required><br><br>
+       </div>
+       </div>
+
+        <div class="button-container">
+          <button type="button" onclick="validateForm()">Generate Card</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card-container">
+        <h2>Generate ID Card</h2>
+      <div class="card" id="id-card">
+        <div class="i">
+            <img id="photo-preview" alt="Please Input Image">
+        </div>
+       <div class="con">
+        <p id="name-preview"></p>
+        <p id="student-id-preview"></p>
+        <p id="course-preview"></p>
+       </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
